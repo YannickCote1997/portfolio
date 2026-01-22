@@ -68,8 +68,7 @@ ping google.com
 nslookup google.com
 whoami
 gpresult /r
-
-
+```
 B) Checklist – Panne DNS (LE classique)
 Symptômes
 
