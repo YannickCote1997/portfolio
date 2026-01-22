@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projets | Yannick Côté</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">Yannick Côté</a>
+      <nav class="links">
+        <a href="index.html">Accueil</a>
+        <a href="projects.html" class="active">Projets</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Projets</h1>
+      <p class="subtitle">Projets concrets orientés infrastructure, réseau, sécurité et automatisation.</p>
+    </section>
+
+    <section id="proxmox" class="section">
+      <div class="card">
+        <h2>Homelab – Proxmox VE (virtualisation)</h2>
+        <p><strong>Objectif :</strong> Plateforme stable de virtualisation multi-services 24/7.</p>
+
+        <div class="meta">
+          <span class="pill">Proxmox</span>
+          <span class="pill">Linux</span>
+          <span class="pill">NAS / stockage</span>
+          <span class="pill">Backups</span>
+        </div>
+
+        <h3>Ce que j’ai mis en place</h3>
+        <ul>
+          <li>Création et gestion de VMs (Ubuntu/Debian) pour différents services.</li>
+          <li>Snapshots et stratégie de sauvegarde.</li>
+          <li>Stockage NAS + organisation des volumes.</li>
+          <li>Surveillance et maintenance continue.</li>
+        </ul>
+
+        <h3>Résultats</h3>
+        <ul>
+          <li>Services disponibles 24/7</li>
+          <li>Environnement de lab pour apprendre et valider des procédures sysadmin</li>
+        </ul>
+
+        <p class="small">
+          Documentation : <code>/docs/proxmox-homelab.md</code><br/>
+          Screenshots : <code>/assets/screenshots/proxmox/</code>
+        </p>
+      </div>
+    </section>
+
+    <section id="cloudflare" class="section">
+      <div class="card">
+        <h2>WordPress sécurisé via Cloudflare Zero Trust (Tunnel)</h2>
+        <p><strong>Objectif :</strong> Supprimer l’exposition directe du serveur (0 port ouvert).</p>
+
+        <div class="meta">
+          <span class="pill">Cloudflare Tunnel</span>
+          <span class="pill">WAF</span>
+          <span class="pill">Cache Rules</span>
+          <span class="pill">SSL</span>
+        </div>
+
+        <h3>Ce que j’ai fait</h3>
+        <ul>
+          <li>Migration d’une publication par port-forward vers un tunnel Zero Trust.</li>
+          <li>Configuration des règles de cache et bypass pour WooCommerce (cart/checkout).</li>
+          <li>Ajout de protections WAF et durcissement.</li>
+          <li>Validation via tests (headers, cache status, performance).</li>
+        </ul>
+
+        <h3>Résultats</h3>
+        <ul>
+          <li>Réduction de la surface d’attaque</li>
+          <li>Meilleure performance via cache</li>
+        </ul>
+
+        <p class="small">
+          Documentation : <code>/docs/cloudflare-wordpress-zero-trust.md</code>
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>Automatisation PowerShell (support entreprise)</h2>
+        <div class="meta">
+          <span class="pill">PowerShell</span>
+          <span class="pill">Automatisation</span>
+          <span class="pill">Inventaire</span>
+        </div>
+
+        <ul>
+          <li>Scripts d’inventaire et rapports</li>
+          <li>Automatisation de tâches répétitives (ouverture apps, checks, exports)</li>
+          <li>Structure de scripts propre + commentaires</li>
+        </ul>
+
+        <p class="small">Exemples : <code>/scripts/</code></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Yannick Côté — Projets</div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
