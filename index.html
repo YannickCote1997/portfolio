@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yannick Côté | Portfolio TI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">Yannick Côté</a>
+      <nav class="links">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="projects.html">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Technicien TI (N2) → Infrastructure / Réseaux / Cloud</h1>
+        <p class="subtitle">
+          5 ans d’expérience en support entreprise. Passionné par la virtualisation (Proxmox),
+          la sécurité (Cloudflare Zero Trust) et l’automatisation (PowerShell).
+        </p>
+        <div class="cta">
+          <a class="btn" href="projects.html">Voir mes projets</a>
+          <a class="btn btn-ghost" href="assets/CV-Yannick-Cote.pdf" target="_blank">Télécharger mon CV</a>
+        </div>
+
+        <div class="chips">
+          <span class="chip">Windows Server</span>
+          <span class="chip">Active Directory / GPO</span>
+          <span class="chip">DNS / DHCP</span>
+          <span class="chip">Proxmox VE</span>
+          <span class="chip">Cloudflare Zero Trust</span>
+          <span class="chip">PowerShell</span>
+        </div>
+      </div>
+
+      <div class="hero-right card">
+        <h2>À propos</h2>
+        <p>
+          Je travaille en TI depuis 5 ans comme technicien (N2). Je veux évoluer vers un poste orienté
+          administration systèmes/réseaux et éventuellement cloud admin. Je maintiens un homelab
+          qui me sert de laboratoire (virtualisation, reverse proxy, tunnels sécurisés, services Linux).
+        </p>
+
+        <div class="quick">
+          <div>
+            <div class="label">Objectif</div>
+            <div class="value">Technicien réseau / SysAdmin junior</div>
+          </div>
+          <div>
+            <div class="label">Localisation</div>
+            <div class="value">Québec (Rive-Nord / Laurentides)</div>
+          </div>
+          <div>
+            <div class="label">Langues</div>
+            <div class="value">FR / EN</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Ce que j’apporte</h2>
+      <div class="grid3">
+        <div class="card">
+          <h3>Support & diagnostic</h3>
+          <p>Résolution rapide d’incidents, escalade structurée, documentation claire, communication usagers.</p>
+        </div>
+        <div class="card">
+          <h3>Infra & réseau</h3>
+          <p>AD, GPO, permissions, DNS/DHCP, segmentation, reverse proxy, services Windows/Linux.</p>
+        </div>
+        <div class="card">
+          <h3>Sécurité</h3>
+          <p>MFA, réduction de surface d’attaque, tunnels Zero Trust, règles WAF/cache, bonnes pratiques.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Projets vedettes</h2>
+      <div class="grid2">
+        <a class="card project" href="projects.html#proxmox">
+          <h3>Homelab Proxmox VE</h3>
+          <p>Virtualisation multi-VM, stockage NAS, snapshots/backups, services 24/7.</p>
+          <span class="tag">Proxmox • Linux • NAS</span>
+        </a>
+
+        <a class="card project" href="projects.html#cloudflare">
+          <h3>WordPress + Cloudflare Zero Trust</h3>
+          <p>Migration vers tunnel, 0 port ouvert, WAF, cache rules, SSL.</p>
+          <span class="tag">Zero Trust • WAF • Perf</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>
+          <strong>Email :</strong> tonemail@exemple.com<br/>
+          <strong>LinkedIn :</strong> <a href="#" target="_blank">Ton lien</a><br/>
+          <strong>GitHub :</strong> <a href="#" target="_blank">Ton lien</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Yannick Côté — Portfolio TI</div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
